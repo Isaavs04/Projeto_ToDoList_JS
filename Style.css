@@ -1,0 +1,24 @@
+body{
+    /*display: flex;
+    align-items: center;
+    align-content: center;*/
+}
+
+#criarTarefas{
+    background-color: rgb(255, 225, 242);
+}
+#listaTarefas{
+    background-color: rgb(253, 225, 255);
+}
+.btn-estilo{
+            background-color: #e63946;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.35);
+        }
