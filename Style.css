@@ -1,24 +1,86 @@
-body{
-    /*display: flex;
+body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-content: center;*/
+    align-content: center;
+    min-height: 100vh;
+    background-color: rgb(255, 225, 242);
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(152, 1, 114);
 }
 
-#criarTarefas{
-    background-color: rgb(255, 225, 242);
+#Todo {
+    background-color: #ffffff;
+    border: 1px solid pink;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
-#listaTarefas{
+
+#criarTarefas {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: rgb(222, 114, 202);
+    font-weight: 600;
+    border: 1px white solid;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 305px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#tarefa{
+    width: 250px;
+    margin-right: 5px;
+}
+
+input {
+    font-size: medium;
+    height: 30px;
+    color: rgb(152, 1, 114);
+    border: 1px solid rgb(152, 1, 114);
+    border-radius: 4px;
+}
+
+p {
+    padding: 20px;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-bottom: 15px;
+}
+
+#listaTarefas {
+    border: none;
+    border-radius: 20px;
     background-color: rgb(253, 225, 255);
+    text-align: center;
 }
-.btn-estilo{
-            background-color: #e63946;
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.35);
-        }
+
+.btn-estilo {
+    background-color: rgb(222, 114, 202);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    border:1px solid rgb(222, 114, 202);
+    color: rgb(222, 114, 202);
+    font-size: 1rem;
+    font-weight: 600;
+}

@@ -8,6 +8,9 @@ $(document).ready(function () {
         //Criando e definindo o texto do parágrafo como o da tarefa
         let tarefa = document.createElement('p')
         tarefa.textContent = nm + " - " + $('#tarefa').val();
+        //Criando e definindo a data
+        let dataTarefa = document.createElement('p');
+        dataTarefa.textContent = 'Data da tarefa: ' + $('#dataTarefa').val();
         //Criando e estilizando o botão
         let btnRemover = document.createElement('button')
         btnRemover.id = 'btnRemover' + nm;
@@ -16,6 +19,7 @@ $(document).ready(function () {
         nm++;
         //Anexando os elementos p e button a sua div pai
         listaTarefa.appendChild(tarefa);
+        listaTarefa.appendChild(dataTarefa);
         listaTarefa.appendChild(btnRemover);
         //Div parágrafo + botão, adicionadas a minha lista
         listaToDo.appendChild(listaTarefa);
